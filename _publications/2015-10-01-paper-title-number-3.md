@@ -5,6 +5,7 @@ category: manuscripts
 permalink: /publication/PPRL
 excerpt: 'A novel and efficient Privacy-Preserving Recor Linkage method based on a secure 3-party (MPC)computaion framework'
 date: 2025-10-01
+authors: "Şeyma Selcan Mağara, Noah Dietrich, Ali Burak Ünal, Mete Akgün"
 venue: 'Arxiv but Under Review'
 #slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
 paperurl: 'https://arxiv.org/abs/2410.21605'

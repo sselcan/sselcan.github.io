@@ -5,6 +5,7 @@ category: manuscripts
 permalink: /publication/DPLR
 excerpt: 'Privacy-preserving approach for logistic regression that integrates secret sharing-based  multi-party computation (MPC) with differential privacy (DP).'
 date: 2025-08-15
+authors: "Şeyma Selcan Mağara, Ipek Motorcu, Emin Şahin Mektepli, Cem Baykara, Ali Burak Ünal, Mete Akgün"
 venue: 'IEEE Access'
 #slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/11126887'
