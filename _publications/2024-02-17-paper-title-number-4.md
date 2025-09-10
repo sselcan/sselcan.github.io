@@ -1,13 +1,14 @@
 ---
-title: "Paper Title Number 4"
+title: "Privacy-Preserving Machine Learning (PPML) Inference for Clinically Actionable Models"
 collection: publications
-category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about fixing template issue #693.'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+category: manuscripts
+permalink: /publication/ESSG-XGB
+excerpt: "This paper presents a privacy-preserving inference framework for clinically actionable machine learning models, using homomorphic encryption to enable secure and accurate predictions."
+date: 2025-02-10
+authors: 'Balaban, B., Magara, S. S., Yilgor, C., Yucekul, A., Obeid, I., Pizones, J., Kleinstueck, F., Perez-Grueso, F. J. S., Pellisé, F., Alanay, A., Savas, E., Bağcı, Ç., Sezerman, O. U., & European Spine Study Group'
+venue: 'IEEE Access'
+paperurl: 'https://ieeexplore.ieee.org/abstract/document/10878994'
+#citation: 'Balaban, B., Magara, S. S., Yilgor, C., Yucekul, A., Obeid, I., Pizones, J., Kleinstueck, F., Perez-Grueso, F. J. S., Pellisé, F., Alanay, A., Savas, E., Bağcı, Ç., Sezerman, O. U., & European Spine Study Group. (2025). Privacy-Preserving Machine Learning (PPML) Inference for Clinically Actionable Models. IEEE Access, 13, 37431-37456.'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+This work introduces a secure framework for running clinically actionable ML models under homomorphic encryption. The system achieves high accuracy while ensuring full data privacy, demonstrated with healthcare datasets.

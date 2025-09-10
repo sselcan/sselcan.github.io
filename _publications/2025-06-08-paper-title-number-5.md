@@ -1,13 +1,13 @@
 ---
-title: "Paper Title Number 5, with math $$E=mc^2$$"
+title: "Privacy Preserving Data Imputation via Multi-Party Computation for Medical Applications"
 collection: publications
-category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about a famous math equation, $$E=mc^2$$'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+category: manuscripts
+permalink: /publication/privacy-preserving-data-imputation
+excerpt: "We propose a privacy-preserving data imputation framework using secure multi-party computation (MPC) to address missing values in medical datasets, ensuring regulatory compliance and maintaining model accuracy."
+date: 2024-10-01
+authors: "Julia Jentsch, Ali Burak Ünal, Şeyma Selcan Mağara, Mete Akgün"
+venue: 'IEEE International Conference on E-health Networking, Application & Services (HealthCom)'
+paperurl: 'https://doi.org/10.1109/HealthCom60970.2024.10880795'
+citation: 'Jentsch, J., Ünal, A. B., Mağara, Ş. S., & Akgün, M. (2024). Privacy Preserving Data Imputation via Multi-Party Computation for Medical Applications. In <i>Proceedings of the 2024 IEEE International Conference on E-health Networking, Application & Services (HealthCom)</i> (pp. 1–6). IEEE. https://doi.org/10.1109/HealthCom60970.2024.10880795'
 ---
-
-Using [MathJax](https://www.mathjax.org/) in the description is supported - $$E=mc^2$$ - however, the use must be mindful that the default delimiters are `$$...$$` and `\\[...\\]` which differs from the `$...$` that is typically expected.
+This paper introduces a secure imputation pipeline leveraging multi-party computation (MPC) for handling missing medical data. The approach ensures privacy-preserving preprocessing and maintains predictive model performance in healthcare applications.
