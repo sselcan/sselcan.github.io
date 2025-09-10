@@ -29,8 +29,11 @@
 
     <!-- Title (clickable) -->
     <h2 class="archive__item-title" itemprop="headline">
+      {% if post.collection == "teaching" %}
+      {{ title }}
+    {% else %}
       <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-    </h2>
+    {% endif %}    </h2>
 
     <!-- Authors -->
     {% if post.authors %}

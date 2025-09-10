@@ -16,7 +16,7 @@ I am a Ph.D. student in the MDPPML and Pfeifer Groups at the University of Tübi
 - Homomorphic Encryption  
 
 ## Education
-- **Ph.D. in Computer Science**, [University of Tubingen], *Ongoing*  
+- **Ph.D. in Computer Science**, University of Tubingen, *Ongoing*  
 - **M.Sc. in Computer Science**, Sabanci University, *2022*  
 - **B.Sc. in Computer Science and Engineering**, Sabanci University, *2019*  
 - **B.Sc. in Electronics Engineering**, Sabanci University, *2018*  
