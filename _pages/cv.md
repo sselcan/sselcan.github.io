@@ -18,7 +18,7 @@ This is the **short version** of my CV. Summary of the information you can alrea
 
 ---
 
-If you still want the **“extended cut”**, feel free to email me or wait me to update the website.  
+If you still want the extended cut, feel free to email me or wait me to update the website.  
 
 📩 [Request full CV](mailto:sselcan.magara@gmail.com)  
 
