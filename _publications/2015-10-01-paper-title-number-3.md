@@ -3,14 +3,15 @@ title: "Accelerating Privacy-Preserving Medical Record Linkage: A Three-Party MP
 collection: publications
 category: manuscripts
 permalink: /publication/PPRL
-excerpt: 'A novel and efficient Privacy-Preserving Recor Linkage method based on a secure 3-party (MPC)computaion framework'
+excerpt: 'A novel and efficient Privacy-Preserving Record Linkage method based on a secure 3-party (MPC)computaion framework'
 date: 2025-10-01
 authors: "Şeyma Selcan Mağara, Noah Dietrich, Ali Burak Ünal, Mete Akgün"
-venue: 'Arxiv but Under Review'
+venue: 'Journal of Biomedical Informatics'
 #slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
-paperurl: 'https://arxiv.org/abs/2410.21605'
+paperurl: 'https://www.sciencedirect.com/science/article/pii/S1532046425001492'
 repourl: 'https://github.com/mdppml/PPRL'
-citation: 'Mağara, Ş. S., Dietrich, N., Ünal, A. B., & Akgün, M. (2024). Accelerating Privacy-Preserving Medical Record Linkage: A Three-Party MPC Approach. <i>arXiv preprint</i>, arXiv:2410.21605. https://doi.org/10.48550/arXiv.2410.21605'
+citation: 'Mağara, Ş. S., Dietrich, N., Ünal, A. B., & Akgün, M. (2024). Accelerating Privacy-Preserving Medical Record Linkage: A Three-Party MPC Approach. Journal of Biomedical Informatics, Volume 171, 2025, 104920, ISSN 1532-0464, https://doi.org/10.1016/j.jbi.2025.104920.'
+
 
 ---
 

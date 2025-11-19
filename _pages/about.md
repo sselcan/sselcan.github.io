@@ -8,7 +8,9 @@ redirect_from:
 ---
 # Welcome
 
-I am a Ph.D. student in the MDPPML and Pfeifer Groups at the University of Tübingen, where my research focuses on developing innovative methods for privacy-preserving machine learning (PPML) to enhance the security and privacy of ML systems. Before my Ph.D., I earned my Master's in Computer Science from Sabancı University, where I also completed a double major in Computer Science and Electronics Engineering.
+I’m a Ph.D. student at the University of Tübingen working with Dr. Mete Akgün on privacy-preserving machine learning and secure computation. My current work involves secure multiparty computation, homomorphic encryption, a bit of differential privacy and more recetly adversarial attacks. I’m broadly interested in privacy-enhancing technologies and different approaches to secure machine learning.
+
+Before beginning my Ph.D., I completed my Master’s in Computer Science at Sabancı University under the supervision of Prof. Erkay Savaş, where I worked on PPML using homomorphic encryption. I also completed a double major in Computer Science and Electronics Engineering in Sabancı University.
 
 ## Research Interests
 - Privacy Preserving Machine Learning  
