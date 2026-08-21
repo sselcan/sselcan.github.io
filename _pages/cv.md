@@ -9,18 +9,36 @@ redirect_from:
 
 {% include base_path %}
 
-Looking for my CV? You’re in the right place. But currently my CV is not here. 
-This is the **short version** of my CV. Summary of the information you can already find in:  
+Here is my full CV. You can read it below or download a copy.
 
-- [Education](/#education)  
-- [Publications](/publications/)  
-- [Teaching](/teaching/)  
+<p>
+  <a class="btn btn--primary" href="{{ base_path }}/files/Seyma_Selcan_Magara_CV.pdf" download>Download CV (PDF)</a>
+</p>
+
+<div class="cv-embed">
+  <object data="{{ base_path }}/files/Seyma_Selcan_Magara_CV.pdf" type="application/pdf" width="100%" height="100%">
+    <p>Your browser can&rsquo;t display PDFs inline.
+      <a href="{{ base_path }}/files/Seyma_Selcan_Magara_CV.pdf">Download the CV instead</a>.</p>
+  </object>
+</div>
+
+<style>
+  .cv-embed {
+    width: 100%;
+    height: 80vh;
+    min-height: 500px;
+    margin-bottom: 2em;
+    border: 1px solid #e6e6e6;
+  }
+  @media (max-width: 600px) {
+    /* inline PDF viewers are unusable on small screens; the download link above still works */
+    .cv-embed { display: none; }
+  }
+</style>
+
+A short summary follows below; see also [Publications](/publications/) and [Teaching](/teaching/).
 
 ---
-
-If you still want the extended cut, feel free to email me or wait me to update the website.  
-
-📩 [Request full CV](mailto:sselcan.magara@gmail.com)  
 
 Education
 ======
@@ -68,6 +86,7 @@ Publications
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
    -->
+
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
