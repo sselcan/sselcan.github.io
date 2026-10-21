@@ -1,9 +1,9 @@
 ---
-title: "Tutor – Practical Course on Secure Multi-Party Computation"
+title: "Tutor – Secure Processing of Medical Data: Privacy-Enhancing Technologies in Practice"
 collection: teaching
 type: "Tutor"
 venue: "University of Tübingen"
-date: 2023-04-01
-dates: ["Winter 2023-2024", "Winter 2024-2025"]
-excerpt: "Tutored in Practical Course on MPC at University of Tübingen. Conducted sessions twice, guiding students through protocol design and implementations."
+date: 2024-03-01
+dates: ["March 2024", "March 2025", "March 2026"]
+excerpt: "Tutor for the practical course on privacy-enhancing technologies for medical data at the University of Tübingen, held annually as a March block course since 2024. Guides students through protocol design and implementation."
 ---

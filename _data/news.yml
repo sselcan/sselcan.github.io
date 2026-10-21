@@ -10,13 +10,18 @@
 #
 # The homepage shows the most recent few; /news/ shows everything.
 
-# TODO: confirm this date — I could not find the session date online.
-- date: 2026-10-01
+- date: 2026-04-01
+  text: "TA for **Introduction to Cryptography** at the University of Tübingen (summer semester)."
+
+- date: 2026-03-01
+  text: "Taught the practical course **Secure Processing of Medical Data: Privacy-Enhancing Technologies in Practice** at the University of Tübingen."
+
+- date: 2026-10-08   # Module II ran 5-9 Oct 2026; Thursday was the 8th
   text: "Led a session on privacy in **Module II** of **CUMIN** at Bielefeld University."
   link: https://www.uni-bielefeld.de/fakultaeten/technische-fakultaet/arbeitsgruppen/semantic-computing/cumin/
 
 - date: 2026-09-03
-  text: "Our paper on privacy-preserving detection of rare disease-associated cell subsets is presented at **CIBB 2026**."
+  text: "Presented our work on privacy-preserving detection of rare disease-associated cell subsets as a poster at **CIBB 2026**."
   link: https://arxiv.org/abs/2608.20118
 
 - date: 2025-10-01
