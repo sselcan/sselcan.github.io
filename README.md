@@ -1,96 +1,177 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# sselcan.github.io
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+Personal academic website for Şeyma Selcan Mağara — live at <https://sselcan.github.io>.
 
-# Getting Started
+Built with [Jekyll](https://jekyllrb.com) using the
+[Academic Pages](https://academicpages.github.io/) template. This README is the
+practical guide for running and updating the site; template documentation lives
+upstream at <https://github.com/academicpages/academicpages.github.io>.
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+---
 
-See more info at https://academicpages.github.io/
+## Running it locally
 
-## Running locally
+### In the devcontainer (the normal case)
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+**A Jekyll server is already running.** The container starts it as PID 1:
 
-1. Clone the repository and made updates as detailed above.
+```
+jekyll serve -H 0.0.0.0 -w --config _config.yml,_config_docker.yml
+```
 
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
+Just open <http://localhost:4000>. The `-w` flag watches the source files, so
+saving any page, publication, or stylesheet triggers a rebuild in a few seconds —
+you only need to **refresh the browser**. Do not start a second server; port 4000
+is taken and you will get `Address already in use - bind(2) for 0.0.0.0:4000`.
 
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+If VS Code doesn't open the page, check the **Ports** panel and make sure 4000 is
+forwarded, then click the globe icon there.
 
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
+### Starting it yourself
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
+Only needed if the running server died (`ps -p 1` to check):
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+```sh
+bundle exec jekyll serve -H 0.0.0.0 -w --config _config.yml,_config_docker.yml
+```
 
-## Using Docker
+Use `bundle exec` so the gem versions pinned in [Gemfile](Gemfile) are the ones
+that run. (`ruby jekyll` is not a valid command — `ruby` expects a file path.)
+The second config file, `_config_docker.yml`, only sets `url: ""` so local links
+don't point at the production domain. Always include it when serving locally.
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
+### With Docker, outside the devcontainer
 
-You can build and execute the container by running the following command in the repository:
-
-```bash
-chmod -R 777 .
+```sh
 docker compose up
 ```
 
-You should now be able to access the website from `localhost:4000`.
+Same result — see [docker-compose.yaml](docker-compose.yaml).
 
-### Using the DevContainer in VS Code
+### Gotchas
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
-
-# Maintenance
-
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+| Symptom | Cause |
+| --- | --- |
+| Edits don't appear | Browser cache. Hard refresh: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> (<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> on Mac), or use a private window. PDFs are cached especially aggressively. |
+| `_config.yml` edits don't appear | **The watcher does not reload `_config.yml`.** Restart the server. |
+| `Address already in use` | A server is already running. Use it instead of starting another. |
+| Changes missing on the live site | Not pushed yet, or the new files were never `git add`ed. See [Publishing](#publishing). |
 
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+## Where everything lives
+
+| What | File / folder |
+| --- | --- |
+| **Homepage text** | [_pages/about.md](_pages/about.md) — `permalink: /` |
+| Site title, description, sidebar profile, social links | [_config.yml](_config.yml) |
+| Header menu | [_data/navigation.yml](_data/navigation.yml) |
+| Publications | [_publications/](_publications/) — one file per paper |
+| Teaching entries | [_teaching/](_teaching/) — one file per course |
+| Talks | [_talks/](_talks/) *(currently hidden from the menu)* |
+| Portfolio | [_portfolio/](_portfolio/) *(currently hidden from the menu)* |
+| CV page | [_pages/cv.md](_pages/cv.md) |
+| PDFs and downloads | [files/](files/) → served at `/files/<name>.pdf` |
+| Images | [images/](images/) |
+| Page templates | [_layouts/](_layouts/), [_includes/](_includes/) |
+| Styles | [_sass/](_sass/), [assets/css/](assets/css/) |
+
+`_site/` is the generated output. It is gitignored — never edit or commit it.
+
+---
+
+## How to make common changes
+
+### Edit the homepage
+
+[_pages/about.md](_pages/about.md). Plain Markdown below the front matter.
+
+### Add a publication
+
+Create `_publications/YYYY-MM-DD-short-name.md`:
+
+```yaml
+---
+title: "Full paper title"
+collection: publications
+category: manuscripts
+permalink: /publication/short-name
+excerpt: 'One or two sentences shown in the listing.'
+date: 2026-09-03
+authors: "Şeyma Selcan Mağara, Co Author, Another Author"
+venue: 'Conference or journal name'
+paperurl: 'https://arxiv.org/abs/...'
+citation: 'Full formatted citation.'
+---
+
+Longer description shown on the publication's own page.
+```
+
+Notes:
+- `category` must be a key from `publication_category` in [_config.yml](_config.yml)
+  (currently `manuscripts` and `books`). An unknown value means the entry silently
+  **does not appear** on the publications page.
+- `permalink` is the page URL and is independent of the filename — keep it unique.
+- The listing is sorted by `date`, newest first.
+
+### Add a teaching entry
+
+Create a file in [_teaching/](_teaching/), matching the existing ones:
+
+```yaml
+---
+title: "Teaching Assistant – Course Name"
+collection: teaching
+type: "Teaching Assistant"
+venue: "University name"
+date: 2020-09-15
+dates: ["Fall 2020–2021"]
+excerpt: "Short summary."
+---
+```
+
+`date` controls ordering; `dates` is the human-readable label that gets displayed.
+
+### Show or hide a menu item
+
+Uncomment or comment the entry in [_data/navigation.yml](_data/navigation.yml).
+Removing it from the menu does **not** remove the page — it stays reachable at its
+URL. Talks, Portfolio, and Blog Posts are currently commented out.
+
+### Update the CV
+
+Replace `files/Seyma_Selcan_Magara_CV.pdf` with the new PDF, keeping the same
+filename so the download button and inline viewer in [_pages/cv.md](_pages/cv.md)
+keep working. If you rename it, update both references in that file.
+
+### Change the sidebar (photo, bio, email, links)
+
+The `author:` block in [_config.yml](_config.yml). The avatar path is relative to
+[images/](images/). Blank fields hide their icon. **Restart the server** afterwards.
+
+---
+
+## Publishing
+
+The repo is `sselcan/sselcan.github.io` and uses GitHub's classic
+"deploy from a branch" Pages build — there is no deploy workflow in
+[.github/workflows/](.github/workflows/), GitHub runs Jekyll server-side.
+
+**Pushing to `master` is all it takes.** The live site updates about a minute
+later; progress shows as a `pages-build-deployment` run in the repo's Actions tab.
+
+One thing to watch: `git commit -a` only picks up files git already tracks. New
+publications, new PDFs, and new images must be added explicitly:
+
+```sh
+git status              # look for "Untracked files"
+git add _publications/new-paper.md files/new.pdf
+git commit -m "Add new paper"
+git push
+```
+
+A new file that was never `git add`ed will work perfectly on localhost and 404 on
+the live site — that is the most common cause of "it worked locally".
+
+Always preview at <http://localhost:4000> before pushing; the live build gives no
+useful error messages when a page fails to render.

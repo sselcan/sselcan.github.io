@@ -1,0 +1,36 @@
+# Homepage "News" list.
+#
+# Newest first is handled automatically — entries are sorted by date, so you can
+# add new ones anywhere in this file.
+#
+# Each entry takes:
+#   date  (required)  YYYY-MM-DD. Only month + year are displayed.
+#   text  (required)  Markdown is allowed (*italics*, **bold**, [links](url)).
+#   link  (optional)  Makes the whole entry clickable.
+#
+# The homepage shows the most recent few; /news/ shows everything.
+
+# TODO: confirm this date — I could not find the session date online.
+- date: 2026-10-01
+  text: "Led a session in the *Group Work on Privacy* module of **CUMIN** at Bielefeld University."
+  link: https://www.uni-bielefeld.de/fakultaeten/technische-fakultaet/arbeitsgruppen/semantic-computing/cumin/
+
+- date: 2026-09-03
+  text: "Our paper on privacy-preserving detection of rare disease-associated cell subsets is presented at **CIBB 2026**."
+  link: https://arxiv.org/abs/2608.20118
+
+- date: 2025-10-01
+  text: "*Accelerating Privacy-Preserving Medical Record Linkage: A Three-Party MPC Approach* appeared in the **Journal of Biomedical Informatics**."
+  link: https://www.sciencedirect.com/science/article/pii/S1532046425001492
+
+- date: 2025-08-15
+  text: "*Secure and Efficient Logistic Regression With Secret-Sharing MPC and Differential Privacy* appeared in **IEEE Access**."
+  link: https://ieeexplore.ieee.org/document/11126887
+
+- date: 2025-02-10
+  text: "*Privacy-Preserving Machine Learning (PPML) Inference for Clinically Actionable Models* appeared in **IEEE Access**."
+  link: https://ieeexplore.ieee.org/abstract/document/10878994
+
+- date: 2024-10-01
+  text: "*Privacy Preserving Data Imputation via Multi-Party Computation for Medical Applications* was presented at **IEEE HealthCom 2024**."
+  link: https://doi.org/10.1109/HealthCom60970.2024.10880795

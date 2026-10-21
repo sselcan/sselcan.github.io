@@ -12,6 +12,12 @@ I’m a Ph.D. student at the University of Tübingen working with Dr. Mete Akgü
 
 Before beginning my Ph.D., I completed my Master’s in Computer Science at Sabancı University under the supervision of Prof. Erkay Savaş, where I worked on PPML using homomorphic encryption. I also completed a double major in Computer Science and Electronics Engineering in Sabancı University.
 
+## News
+
+{% include news.html limit=4 %}
+
+<p class="news-list__more"><a href="{{ '/news/' | relative_url }}">All news &rarr;</a></p>
+
 ## Research Interests
 - Privacy Preserving Machine Learning  
 - Multi-Party Computation  

@@ -52,3 +52,59 @@
       text-decoration: none;
     }
     
+/* News list (homepage + /news/) ------------------------------------------ */
+
+.news-list {
+  margin: 0 0 1.5em;
+  padding: 0;
+  list-style: none;
+}
+
+.news-list__item {
+  display: flex;
+  gap: 0.9em;
+  padding: 0.5em 0;
+  font-size: 0.85em;
+  line-height: 1.5;
+  border-bottom: 1px solid var(--global-border-color);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.news-list__date {
+  flex: 0 0 5.5em;
+  color: var(--global-text-color-light);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.news-list__text a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--global-border-color);
+
+  &:hover {
+    color: var(--global-link-color-hover);
+    border-bottom-color: currentColor;
+  }
+}
+
+.news-list__more {
+  margin-top: -0.75em;
+  font-size: 0.8em;
+}
+
+/* Stack the date above the text on narrow screens */
+@media screen and (max-width: 37.5em) {
+  .news-list__item {
+    flex-direction: column;
+    gap: 0.15em;
+  }
+
+  .news-list__date {
+    flex-basis: auto;
+    font-size: 0.9em;
+  }
+}
